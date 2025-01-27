@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\" \"backend/**/*.mo\"",
     "sources": "mops sources",
-    "dev": "vite"
+    "dev": "vite",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/vite.svg"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -26,6 +27,7 @@
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-react": "^4.0.1",
     "autoprefixer": "^10.4.20",
     "cross-fetch": "^3.1.6",
@@ -42,6 +44,7 @@
     "typescript": "^5.1.3",
     "vite": "^4.5.9",
     "vite-plugin-environment": "^1.1.3",
+    "vite-plugin-pwa": "^0.21.1",
     "vitest": "^0.32.2"
   }
 }
